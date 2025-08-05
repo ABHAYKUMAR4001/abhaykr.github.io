@@ -1,0 +1,532 @@
+<!--
+  Portfolio website for Abhay Kumar.
+
+  This single‑page site is designed to highlight Abhay's diverse experience across
+  automotive, rail transport and healthcare domains.  It is entirely self‑contained
+  and uses semantic HTML and modern CSS to provide a polished, professional
+  impression on desktop, tablet and mobile screens.  The page is divided into
+  sections which can be navigated via the fixed top navigation bar.
+
+  To host this page on your GitHub Pages site (e.g. abhaykr.github.io) copy
+  this file together with the images referenced below (hero.jpg and about.jpg)
+  into the root of your repository.  Commit and push the changes and GitHub
+  Pages will serve the resulting site automatically.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhay Kumar | Portfolio</title>
+  <style>
+    /* Basic resets */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 1rem;
+    }
+
+    nav .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li {
+      font-size: 0.95rem;
+    }
+
+    nav ul li a:hover {
+      color: #e94560;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      /* Using the about image for the hero background ensures the banner displays correctly on GitHub Pages. */
+      background-image: url('about.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      /*
+       * Overlay slightly transparent to reveal the hero photograph while
+       * maintaining legibility of the text. Adjusted from 0.55 to 0.45.
+       */
+      /* Reduced overlay opacity to showcase the background image. */
+      background: rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      max-width: 800px;
+      padding: 0 1rem;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-content h2 {
+      font-size: 1.5rem;
+      font-weight: normal;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      border-radius: 4px;
+      background: #e94560;
+      color: #fff;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #c62b43;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    section:nth-of-type(odd) {
+      background: #f5f5f5;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    /* About */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .about-image {
+      flex: 1 1 250px;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .about-content {
+      flex: 2 1 400px;
+    }
+
+    .about-content p {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* Experience */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      margin-left: 1rem;
+      border-left: 3px solid #e94560;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.15rem;
+      top: 0.3rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      background: #e94560;
+      border-radius: 50%;
+    }
+
+    .timeline-item h3 {
+      font-size: 1.2rem;
+      color: #e94560;
+      margin-bottom: 0.2rem;
+    }
+
+    .timeline-item h4 {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .timeline-item p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill-card {
+      padding: 1rem;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .skill-card h4 {
+      margin-bottom: 0.6rem;
+      color: #e94560;
+    }
+
+    .skill-card ul {
+      list-style: square inside;
+      padding-left: 0.5rem;
+    }
+
+    .skill-card ul li {
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* Education */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .education-card {
+      background: #fff;
+      padding: 1rem;
+      border-left: 4px solid #e94560;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .education-card h4 {
+      margin-bottom: 0.4rem;
+      color: #e94560;
+    }
+
+    .education-card p {
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* Achievements */
+    .achievements ul {
+      list-style: disc inside;
+      padding-left: 0.5rem;
+    }
+
+    .achievements ul li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    /* Contact */
+    .contact-container {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-container p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .contact-container a {
+      color: #e94560;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      nav ul {
+        gap: 0.8rem;
+      }
+      .hero-content h1 {
+        font-size: 2.4rem;
+      }
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+      section {
+        padding: 3.5rem 1rem;
+      }
+      .about-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .about-image, .about-content {
+        width: 100%;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Abhay Kumar</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Abhay Kumar</h1>
+      <h2>Experienced, Cross‑Industry Engineer</h2>
+      <p style="margin-bottom:1.5rem; font-size:1rem; max-width:600px; margin-left:auto; margin-right:auto;">Pursuing growth‑oriented roles for enhanced learning and professional development across automotive, rail and healthcare domains.</p>
+      <a href="#about" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="about.jpg" alt="Abhay Kumar">
+        </div>
+        <div class="about-content">
+          <p>Hi, I’m Abhay Kumar, an accomplished engineer with a proven track record spanning automotive, rail transport and healthcare industries. My journey has been defined by designing complex systems, leading multifunctional teams and delivering high‑quality, safety‑critical solutions. As a lifelong learner and educator, I also enjoy teaching mathematics and physics and mentoring aspiring engineers.</p>
+          <p>I currently work at Jaguar Land Rover as a Senior Engineer in ADAS Software Development & Requirements, where I lead cross‑functional teams to build software defined vehicles and next‑generation driver assistance features. Prior to this, I gained rich experience in system interoperability at Baxter, digital cockpit and ADAS systems at Harman and passenger announcement & communication systems at Alstom. These roles have honed my ability to bridge customer requirements with engineering execution.</p>
+          <p>Beyond engineering, I’m passionate about digital marketing, web development, painting and contributing to education platforms. I hold a B.Tech in Electrical Engineering from the National Institute of Technology, Srinagar and a Post Graduate Diploma in Information and Cyber Security from Bangalore Institute of Technology – IGNOU.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2 class="section-title">Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>July 2024 – Present</h3>
+          <h4>Senior Engineer – ADAS Software Development & Requirements, Jaguar Land Rover</h4>
+          <p>Leading cross‑functional development for ADAS features (AEB, LKA, ACC, BSM, APA, RPA, ISM, SVMG) and driving the migration to software defined vehicles. Manage requirements lifecycle using DOORS/TRM and guide implementation across QNX/Linux platforms with C++14, state machines and MATLAB. Mentor junior engineers, ensure ISO 26262/ASPICE compliance and spearhead AI‑based tools for innovation validation, white paper generation, plagiarism detection and requirement authoring.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Aug 2022 – Jul 2024</h3>
+          <h4>Senior Engineer, Systems Interoperability, Baxter International</h4>
+          <p>Drove wireless connectivity and cybersecurity for medical devices (WPA2/WPA3), defined system requirements and architectures to enable interoperability between infusion pumps, EMRs and gateways. Collaborated with design partners and functional teams to realise requirements, worked with verification teams on test strategies and ensured traceability across specifications, design and verification.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Mar 2022 – Aug 2022</h3>
+          <h4>Senior Engineer II, Harman International</h4>
+          <p>Owned system engineering for digital cockpit and ADAS products, developing functional and non‑functional specifications, analysing risk, managing requirements and change control, and interfacing with customers. Drove reuse of internal requirements, championed problem solving and lessons learnt, and supported business development through technical impact analysis and compliance matrices.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Jul 2016 – Mar 2022</h3>
+          <h4>Lead System & Control Engineering Expert, Alstom Transport</h4>
+          <p>Designed and implemented passenger announcement and communication information systems (PACIS) for metro projects worldwide. Analysed customer requirements, created technical purchase specifications, validated systems on site, trained maintenance teams and created technical proposals with architectures, BOQs and interface definitions. Led subsystem integration, change management, network configuration and quality process improvements while mentoring new engineers.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Jan 2014 – Jan 2015</h3>
+          <h4>Certified Physics Expert, Meritnation; Online Physics Tutor, TutorVista</h4>
+          <p>Taught physics to high school students globally on online tutoring platforms, resolving complex queries and helping students achieve academic success.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Systems & Control Engineering</h4>
+          <ul>
+            <li>System Engineering & MBSE (SysML)</li>
+            <li>Control Engineering & Electrical Schematics</li>
+            <li>Train level architecture, Ethernet/CAN</li>
+            <li>SDLC: V‑Model & Agile (SCRUM)</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Software & Tools</h4>
+          <ul>
+            <li>C++, Python, MATLAB</li>
+            <li>Requirements Management (DOORS, JIRA, TRM)</li>
+            <li>ALM, Confluence, ClearCase, Teamcenter</li>
+            <li>Networking: TCP/IP, SOME/IP, CAN, IPC</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Leadership & Delivery</h4>
+          <ul>
+            <li>Product Ownership & Functional Leadership</li>
+            <li>Requirements traceability & verification</li>
+            <li>Mentoring, training & cross‑functional coordination</li>
+            <li>Quality management: FMEA, 8D, QRQC, RCA</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Additional</h4>
+          <ul>
+            <li>Cyber security & WPA2/WPA3 protocols</li>
+            <li>Digital marketing & WordPress</li>
+            <li>Teaching mathematics & physics</li>
+            <li>Art & painting (oil canvas landscapes)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h4>B.Tech Electrical Engineering</h4>
+          <p>National Institute of Technology, Srinagar</p>
+          <p>CGPA: 8.039 (2012–2016)</p>
+        </div>
+        <div class="education-card">
+          <h4>PG Diploma in Information & Cyber Security</h4>
+          <p>Bangalore Institute of Technology – IGNOU</p>
+          <p>1st Division (2019–2021)</p>
+        </div>
+        <div class="education-card">
+          <h4>Higher Secondary (AISSCE)</h4>
+          <p>Emmanuel Mission School, Kota</p>
+          <p>82.8% overall; 95% in Mathematics (2011)</p>
+        </div>
+        <div class="education-card">
+          <h4>Secondary (AISSE)</h4>
+          <p>DPS, Panipat Refinery Township</p>
+          <p>89.4% overall; 95% in Maths & Science (2009)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+      <h2 class="section-title">Achievements & Honors</h2>
+      <div class="achievements">
+        <ul>
+          <li>Outstanding Achiever Award for Novum SYR interoperability testing, Baxter (Q4 2023)</li>
+          <li>Six Sigma Green Belt Certified (KPMG)</li>
+          <li>Spot Trainer Awards at Alstom (Dec 2021 & Mar 2021)</li>
+          <li>Appreciation Award for excellent System Engineering in Kochi Metro (Jul 2017)</li>
+          <li>High Spirit YEGP Award (Jul 2016)</li>
+          <li>Cracked GATE Electrical 2016 with AIR‑1861; top ranks in UPTU, IIT‑JEE and AIEEE exams</li>
+          <li>Multiple positions of responsibility including Campus Recruitment Coordinator, Workshop Head and Badminton Team Captain at NIT Srinagar</li>
+          <li>Published poems and essays; maintain a personal blog and online art portfolio</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-container">
+        <p>Feel free to reach out for collaboration, opportunities or to know more about my work.</p>
+        <p>Email: <a href="mailto:abhaykumariit2011@gmail.com">abhaykumariit2011@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918197736143">+91 81977 36143</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/abhay-kumar-5ab24715b/" target="_blank">linkedin.com/in/abhay-kumar-5ab24715b</a></p>
+        <p>Location: Bengaluru, Karnataka, India</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <script>document.write(new Date().getFullYear());</script> Abhay Kumar. All rights reserved.
+  </footer>
+</body>
+</html>
