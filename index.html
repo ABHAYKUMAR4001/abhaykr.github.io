@@ -607,12 +607,27 @@
       .hero-cta { flex-direction: column; align-items: stretch; }
       .hero-cta .btn { justify-content: center; }
 
-      /* Reposition floating badges inside the frame so they never overflow */
+      /* Move floating badges below the photo so they never cover the face */
+      .hero-photo { display: flex; flex-direction: column; align-items: center; }
       .hero-photo img { width: min(300px, 82vw); }
-      .float-badge { font-size: 0.72rem; padding: 0.55rem 0.8rem; }
-      .float-badge .num { font-size: 1.05rem; }
-      .float-badge.b1 { top: 4%; left: 2%; }
-      .float-badge.b2 { bottom: 4%; right: 2%; }
+      .float-badge {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.72rem;
+        padding: 0.5rem 0.85rem;
+        animation: none;
+      }
+      .float-badge .num { font-size: 1rem; }
+      .float-badge.b1, .float-badge.b2 { top: auto; left: auto; right: auto; bottom: auto; }
+      .hero-badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: 1rem;
+      }
 
       section.block { padding: 3.2rem 1rem; }
       .about-stats { gap: 0.6rem; }
@@ -672,8 +687,10 @@
       </div>
       <div class="hero-photo">
         <img src="hero.jpg" alt="Abhay Kumar" onerror="this.onerror=null;this.src='about.jpg';" />
-        <div class="float-badge b1"><div class="num">10+</div>Years in engineering</div>
-        <div class="float-badge b2"><div class="num">ISO 26262</div>ASIL B/D &amp; ASPICE</div>
+        <div class="hero-badges">
+          <div class="float-badge b1"><div class="num">10+</div>Years in engineering</div>
+          <div class="float-badge b2"><div class="num">ISO 26262</div>ASIL B/D &amp; ASPICE</div>
+        </div>
       </div>
     </div>
   </section>
