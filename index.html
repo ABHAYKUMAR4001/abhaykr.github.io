@@ -1,69 +1,1010 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#07111f">
-  <title>Abhay Kumar | ADAS Systems & Software Engineer</title>
-  <meta name="description" content="Abhay Kumar is a senior ADAS systems and software engineer building safety-critical vehicle platforms, functional-safety architectures and AI-powered engineering tools.">
-  <meta name="author" content="Abhay Kumar">
-  <meta property="og:title" content="Abhay Kumar | Engineering intelligence into motion">
-  <meta property="og:description" content="ADAS architecture, AUTOSAR, functional safety, MBSE and AI-driven engineering.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.abhaykr.com/">
-  <meta property="og:image" content="https://www.abhaykr.com/hero.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhay Kumar | ADAS &amp; Systems Engineer</title>
+  <meta name="description" content="Abhay Kumar — Senior ADAS Software &amp; Requirements Engineer at Jaguar Land Rover. Cross-industry systems engineer across automotive, rail and healthcare, with expertise in functional safety (ISO 26262), ASPICE, MBSE and AI-driven engineering tools." />
+  <meta name="author" content="Abhay Kumar" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Abhay Kumar | ADAS &amp; Systems Engineer" />
+  <meta property="og:description" content="Senior ADAS Software &amp; Requirements Engineer at Jaguar Land Rover. Cross-industry systems engineering, functional safety and AI-driven tooling." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.abhaykr.com/" />
+  <meta property="og:image" content="hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
   <style>
-    :root{--ink:#f4f8ff;--muted:#9aabc0;--navy:#07111f;--navy2:#0b192b;--panel:rgba(14,31,51,.74);--line:rgba(167,200,225,.14);--cyan:#54e6d7;--lime:#c7ff65;--blue:#65a7ff;--max:1180px;--radius:24px;--shadow:0 28px 80px rgba(0,0,0,.32)}
-    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:84px}body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--navy);line-height:1.65;overflow-x:hidden}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button{font:inherit}::selection{color:#06101b;background:var(--cyan)}
-    .noise{position:fixed;inset:0;z-index:-4;opacity:.045;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E")}
-    .glow{position:fixed;inset:0;z-index:-5;background:radial-gradient(circle at 8% 10%,rgba(84,230,215,.13),transparent 28%),radial-gradient(circle at 88% 20%,rgba(101,167,255,.14),transparent 27%),linear-gradient(145deg,#07111f,#071421 55%,#081321)}
-    .shell{max-width:var(--max);margin:auto;padding-inline:24px}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--cyan);font:700 12px/1 "Manrope",sans-serif;text-transform:uppercase;letter-spacing:.16em}.eyebrow:before{content:"";width:28px;height:1px;background:currentColor}.section{padding:104px 0}.section-title{font:700 clamp(34px,4.7vw,58px)/1.08 "Manrope",sans-serif;letter-spacing:-.045em;max-width:750px;margin-top:18px}.section-lead{color:var(--muted);font-size:18px;max-width:650px;margin-top:20px}
-    header{position:fixed;inset:0 0 auto;z-index:50;transition:.25s}header.scrolled{background:rgba(7,17,31,.78);border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}nav{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 19px "Manrope",sans-serif;letter-spacing:-.04em;display:flex;align-items:center;gap:12px}.brand-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#07111f;background:linear-gradient(135deg,var(--cyan),var(--lime));font-size:14px}.nav-links{list-style:none;display:flex;align-items:center;gap:28px}.nav-links a{font-size:14px;color:var(--muted);transition:.2s}.nav-links a:hover,.nav-links a.active{color:var(--ink)}.nav-cta{padding:10px 16px;border:1px solid rgba(84,230,215,.42);border-radius:999px!important;color:var(--cyan)!important}.menu-btn{display:none;color:var(--ink);background:none;border:0;font-size:25px;cursor:pointer}
-    .hero{min-height:100vh;display:grid;align-items:center;padding:126px 0 70px;position:relative}.hero-grid{display:grid;grid-template-columns:1.17fr .83fr;gap:64px;align-items:center}.availability{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(255,255,255,.025);border-radius:999px;padding:8px 13px;color:#bdd0e4;font-size:13px;margin-bottom:25px}.pulse{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 6px rgba(199,255,101,.09)}h1{font:800 clamp(47px,6.7vw,88px)/.98 "Manrope",sans-serif;letter-spacing:-.065em}.outline{color:transparent;-webkit-text-stroke:1px rgba(244,248,255,.46)}.hero-lead{font-size:clamp(17px,2vw,21px);color:#adbed1;max-width:640px;margin:27px 0 32px}.hero-lead strong{color:var(--ink);font-weight:600}.actions{display:flex;gap:13px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:14px 21px;font-weight:700;font-size:14px;transition:.2s;border:1px solid var(--line)}.button.primary{background:linear-gradient(135deg,var(--cyan),#7ff0c3);color:#07111f;border:0;box-shadow:0 14px 40px rgba(84,230,215,.15)}.button:hover{transform:translateY(-3px)}.button.secondary:hover{border-color:rgba(84,230,215,.5)}
-    .hero-visual{position:relative;justify-self:end;width:min(100%,430px)}.portrait-frame{position:relative;border:1px solid var(--line);border-radius:38px;padding:10px;background:linear-gradient(150deg,rgba(84,230,215,.1),rgba(101,167,255,.04));box-shadow:var(--shadow)}.portrait-frame:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(145deg,rgba(84,230,215,.7),transparent 35%,rgba(101,167,255,.45));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}.portrait-frame img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:29px;filter:saturate(.8) contrast(1.03)}.coord{position:absolute;font:600 10px "Manrope";letter-spacing:.14em;color:#68829e}.coord.c1{left:-7px;top:19%}.coord.c2{right:-9px;bottom:16%;writing-mode:vertical-rl}.signal-card{position:absolute;left:-46px;bottom:30px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:rgba(8,22,38,.89);backdrop-filter:blur(14px);box-shadow:var(--shadow)}.signal-card b{display:block;font:800 24px "Manrope";color:var(--lime)}.signal-card span{color:var(--muted);font-size:12px}.orbit{position:absolute;right:-39px;top:42px;width:96px;height:96px;border:1px dashed rgba(84,230,215,.35);border-radius:50%;animation:spin 16s linear infinite}.orbit:after{content:"";position:absolute;width:9px;height:9px;background:var(--cyan);border-radius:50%;left:8px;top:8px;box-shadow:0 0 18px var(--cyan)}@keyframes spin{to{transform:rotate(360deg)}}
-    .ticker{border-block:1px solid var(--line);overflow:hidden;background:rgba(255,255,255,.018)}.ticker-track{width:max-content;display:flex;animation:ticker 28s linear infinite}.ticker span{display:flex;align-items:center;gap:28px;padding:19px 28px;color:#8ca0b7;font:600 12px "Manrope";letter-spacing:.13em}.ticker span:after{content:"+";color:var(--cyan);font-size:18px}@keyframes ticker{to{transform:translateX(-50%)}}
-    .metrics{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:55px;background:rgba(255,255,255,.02)}.metric{padding:28px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric b{font:700 34px "Manrope";color:var(--ink)}.metric small{display:block;color:var(--muted);margin-top:5px}.metric b em{font-style:normal;color:var(--cyan)}
-    .expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}.expertise-card{position:relative;min-height:270px;padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(150deg,rgba(18,39,63,.73),rgba(9,23,39,.66));overflow:hidden;transition:.25s}.expertise-card:hover{transform:translateY(-7px);border-color:rgba(84,230,215,.34)}.expertise-card .num{font:700 12px "Manrope";color:var(--cyan);letter-spacing:.12em}.expertise-card h3{font:700 22px/1.2 "Manrope";margin:55px 0 14px;max-width:260px}.expertise-card p{color:var(--muted);font-size:15px}.expertise-card:after{content:"";position:absolute;width:110px;height:110px;border:1px solid rgba(101,167,255,.14);border-radius:50%;right:-45px;top:-45px}
-    .architecture{margin-top:48px;border:1px solid var(--line);border-radius:30px;background:#091728;padding:34px;position:relative;overflow:hidden}.architecture:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(101,167,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(101,167,255,.04) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,#000,transparent)}.arch-label{position:relative;color:var(--muted);font:600 11px "Manrope";letter-spacing:.15em;text-transform:uppercase}.flow{position:relative;display:grid;grid-template-columns:repeat(6,1fr);align-items:center;gap:18px;margin-top:38px}.node{position:relative;text-align:center;padding:18px 8px;border:1px solid rgba(84,230,215,.2);background:rgba(7,17,31,.84);border-radius:14px;color:#dce7f4;font:600 12px "Manrope"}.node:not(:last-child):after{content:"→";position:absolute;right:-17px;color:var(--cyan)}.arch-note{position:relative;margin-top:27px;color:var(--muted);font-size:14px}.arch-note strong{color:var(--lime)}
-    .work-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;margin-top:48px}.project{padding:29px;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);position:relative;overflow:hidden;min-height:290px;transition:.25s}.project:hover{border-color:rgba(101,167,255,.38)}.project.wide{grid-row:span 2;min-height:598px;background:radial-gradient(circle at 95% 5%,rgba(84,230,215,.13),transparent 32%),var(--panel)}.project-tag{color:var(--cyan);font:700 11px "Manrope";letter-spacing:.14em;text-transform:uppercase}.project h3{font:700 clamp(23px,3vw,38px)/1.12 "Manrope";letter-spacing:-.03em;margin:21px 0 15px;max-width:560px}.project:not(.wide) h3{font-size:23px}.project p{color:var(--muted);max-width:600px}.project-list{list-style:none;display:grid;gap:12px;margin-top:28px}.project-list li{display:flex;gap:12px;color:#c5d1df;font-size:14px}.project-list li:before{content:"↗";color:var(--lime)}.tech-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.tech-row span{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#9eb0c4;font-size:11px}.radar{height:180px;margin-top:38px;position:relative;display:grid;place-items:center}.radar i{position:absolute;border:1px solid rgba(84,230,215,.18);border-radius:50%}.radar i:nth-child(1){width:165px;height:165px}.radar i:nth-child(2){width:110px;height:110px}.radar i:nth-child(3){width:55px;height:55px}.radar:after,.radar:before{content:"";position:absolute;background:rgba(84,230,215,.12)}.radar:before{width:1px;height:100%}.radar:after{height:1px;width:80%}.radar b{width:15px;height:15px;background:var(--lime);border-radius:50%;box-shadow:0 0 30px var(--lime)}
-    .career-layout{display:grid;grid-template-columns:310px 1fr;gap:68px;margin-top:55px}.career-sticky{position:sticky;top:115px;align-self:start}.career-sticky p{color:var(--muted);margin:20px 0 25px}.roles{border-left:1px solid var(--line)}.role-card{position:relative;padding:0 0 48px 42px}.role-card:before{content:"";position:absolute;left:-6px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--navy);border:2px solid var(--cyan);box-shadow:0 0 0 7px rgba(84,230,215,.06)}.role-meta{font:700 11px "Manrope";letter-spacing:.12em;color:var(--cyan);text-transform:uppercase}.role-card h3{font:700 23px "Manrope";margin:8px 0 3px}.company{color:#c1cede;font-weight:600}.role-card p{color:var(--muted);margin-top:13px;font-size:15px}.role-card ul{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin-top:16px}.role-card li{font-size:11px;color:#90a5bb;border:1px solid var(--line);padding:6px 10px;border-radius:999px}
-    .skills-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:56px;align-items:start;margin-top:52px}.skills-copy{font-size:20px;color:#b7c5d5}.skill-groups{display:grid;gap:13px}.skill-group{border:1px solid var(--line);border-radius:18px;padding:21px 22px;background:rgba(255,255,255,.018)}.skill-group h3{font:700 15px "Manrope";margin-bottom:13px;color:var(--ink)}.skill-group p{color:var(--muted);font-size:14px}
-    .edu-awards{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:52px}.column-title{font:700 14px "Manrope";color:var(--cyan);text-transform:uppercase;letter-spacing:.12em;margin-bottom:22px}.edu-item,.award-item{padding:18px 0;border-top:1px solid var(--line)}.edu-item h3,.award-item h3{font:700 17px "Manrope"}.edu-item p,.award-item p{font-size:14px;color:var(--muted);margin-top:5px}.date{color:var(--blue)!important}
-    .contact-card{position:relative;padding:65px;border:1px solid var(--line);border-radius:32px;background:radial-gradient(circle at 84% 15%,rgba(199,255,101,.11),transparent 26%),radial-gradient(circle at 10% 90%,rgba(84,230,215,.13),transparent 34%),var(--navy2);overflow:hidden}.contact-card h2{font:700 clamp(38px,6vw,70px)/1.02 "Manrope";letter-spacing:-.05em;max-width:830px;margin:18px 0 28px}.contact-card h2 span{color:var(--cyan)}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.contact-details{display:flex;flex-wrap:wrap;gap:20px 35px;margin-top:34px;color:var(--muted);font-size:14px}.contact-details a:hover{color:var(--cyan)}
-    footer{padding:30px 0 40px;color:#71869d;font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:27px}.to-top{color:var(--cyan)}
-    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:900px){.nav-links{position:fixed;inset:0 0 0 auto;width:min(82%,360px);padding:105px 34px;flex-direction:column;align-items:flex-start;background:#0a1829;transform:translateX(100%);transition:.3s;box-shadow:-20px 0 60px rgba(0,0,0,.35)}.nav-links.open{transform:none}.nav-links a{font-size:18px}.menu-btn{display:block;z-index:2}.hero-grid{grid-template-columns:1fr;text-align:center}.hero-copy{display:flex;flex-direction:column;align-items:center}.hero-visual{justify-self:center;width:min(85%,400px);order:-1}.portrait-frame img{aspect-ratio:5/4;object-position:center 22%}.signal-card{left:-20px}.metrics{grid-template-columns:1fr 1fr}.metric:nth-child(2){border-right:0}.metric:nth-child(-n+2){border-bottom:1px solid var(--line)}.expertise-grid{grid-template-columns:1fr 1fr}.expertise-card:last-child{grid-column:1/-1}.flow{grid-template-columns:1fr 1fr}.node:not(:last-child):after{display:none}.work-grid{grid-template-columns:1fr}.project.wide{min-height:auto}.career-layout{grid-template-columns:1fr;gap:35px}.career-sticky{position:static}.skills-layout{grid-template-columns:1fr}.edu-awards{gap:26px}.contact-card{padding:45px}}
-    @media(max-width:620px){.shell{padding-inline:18px}.section{padding:78px 0}.hero{padding-top:106px}.hero-visual{width:88%}.orbit{right:-22px}.signal-card{bottom:15px}.metrics{margin-top:40px}.metric{padding:20px 15px}.metric b{font-size:27px}.expertise-grid{grid-template-columns:1fr}.expertise-card:last-child{grid-column:auto}.architecture{padding:24px 18px}.flow{grid-template-columns:1fr}.work-grid{gap:13px}.project,.project.wide{min-height:auto;padding:24px}.radar{height:150px}.edu-awards{grid-template-columns:1fr}.contact-card{padding:36px 24px}.contact-details{display:grid;gap:10px}.footer-inner{flex-direction:column}.outline{-webkit-text-stroke:.7px rgba(244,248,255,.46)}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+    :root {
+      --bg: #0a0e17;
+      --bg-soft: #111725;
+      --surface: #151d2e;
+      --surface-2: #1b2438;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #e8edf7;
+      --text-muted: #9aa7bd;
+      --accent: #ff4d6d;
+      --accent-2: #4d9bff;
+      --gradient: linear-gradient(120deg, #ff4d6d 0%, #ff8a5c 40%, #4d9bff 100%);
+      --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+      --radius: 16px;
+      --maxw: 1160px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .logo { font-family: 'Sora', sans-serif; }
+
+    a { color: inherit; text-decoration: none; }
+
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* Animated aurora background */
+    .aurora {
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background:
+        radial-gradient(40% 40% at 15% 20%, rgba(255, 77, 109, 0.18), transparent 60%),
+        radial-gradient(45% 45% at 85% 15%, rgba(77, 155, 255, 0.16), transparent 60%),
+        radial-gradient(50% 50% at 70% 85%, rgba(255, 138, 92, 0.12), transparent 60%);
+      filter: blur(20px);
+      animation: drift 18s ease-in-out infinite alternate;
+    }
+    @keyframes drift {
+      0%   { transform: translate3d(0,0,0) scale(1); }
+      100% { transform: translate3d(0,-4%,0) scale(1.08); }
+    }
+
+    /* Navigation */
+    header {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      z-index: 1000;
+      transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+    }
+    header.scrolled {
+      background: rgba(10, 14, 23, 0.75);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--border);
+    }
+    nav {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.4rem;
+    }
+    nav .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: 0.3px;
+    }
+    nav .logo span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.8rem;
+    }
+    nav ul li a {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      position: relative;
+      transition: color 0.25s ease;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -6px;
+      width: 0; height: 2px;
+      background: var(--gradient);
+      transition: width 0.25s ease;
+    }
+    nav ul li a:hover { color: var(--text); }
+    nav ul li a:hover::after { width: 100%; }
+
+    .nav-toggle { display: none; background: none; border: 0; color: var(--text); font-size: 1.5rem; cursor: pointer; line-height: 1; }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 7rem 1.4rem 4rem;
+    }
+    .hero-inner {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(255, 77, 109, 0.1);
+      border: 1px solid rgba(255, 77, 109, 0.25);
+      padding: 0.4rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow .dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 0 rgba(255,77,109,0.7);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255,77,109,0.6); }
+      70% { box-shadow: 0 0 0 8px rgba(255,77,109,0); }
+      100% { box-shadow: 0 0 0 0 rgba(255,77,109,0); }
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -1px;
+      margin-bottom: 1.2rem;
+    }
+    .hero h1 .grad {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero .role {
+      font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      min-height: 1.6em;
+    }
+    .hero .role .typed { color: var(--accent-2); }
+    .hero p.lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 33rem;
+      margin-bottom: 2rem;
+    }
+    .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.6rem;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      border: 1px solid transparent;
+    }
+    .btn-primary {
+      background: var(--gradient);
+      color: #fff;
+      box-shadow: 0 10px 30px -10px rgba(255, 77, 109, 0.6);
+    }
+    .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 16px 36px -10px rgba(255, 77, 109, 0.7); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border-color: var(--border);
+    }
+    .btn-ghost:hover { background: var(--surface); transform: translateY(-3px); }
+
+    /* Hero portrait */
+    .hero-photo {
+      position: relative;
+      justify-self: center;
+    }
+    .hero-photo img {
+      width: min(360px, 78vw);
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .hero-photo::before {
+      content: "";
+      position: absolute;
+      inset: -14px;
+      border-radius: 32px;
+      background: var(--gradient);
+      opacity: 0.35;
+      filter: blur(28px);
+      z-index: -1;
+    }
+    .float-badge {
+      position: absolute;
+      background: rgba(21, 29, 46, 0.9);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0.7rem 1rem;
+      box-shadow: var(--shadow);
+      font-size: 0.8rem;
+      animation: floaty 4s ease-in-out infinite;
+    }
+    .float-badge .num {
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+      background: var(--gradient);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .float-badge.b1 { top: 8%; left: -6%; }
+    .float-badge.b2 { bottom: 10%; right: -8%; animation-delay: 1.5s; }
+    @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+    /* Sections */
+    section.block {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 6rem 1.4rem;
+    }
+    .section-head { margin-bottom: 3rem; text-align: center; }
+    .section-head .kicker {
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .section-head h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      margin-top: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .about-photo img {
+      width: 100%;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .about-text p { color: var(--text-muted); margin-bottom: 1.1rem; }
+    .about-text strong { color: var(--text); font-weight: 600; }
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem;
+      text-align: center;
+    }
+    .stat .n {
+      font-family: 'Sora', sans-serif;
+      font-weight: 800;
+      font-size: 1.7rem;
+      background: var(--gradient);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .stat .l { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+    /* Timeline */
+    .timeline { position: relative; max-width: 820px; margin: 0 auto; }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 18px; top: 6px; bottom: 6px;
+      width: 2px;
+      background: linear-gradient(var(--accent), var(--accent-2));
+    }
+    .t-item { position: relative; padding-left: 3.5rem; margin-bottom: 2.2rem; }
+    .t-item::before {
+      content: "";
+      position: absolute;
+      left: 10px; top: 6px;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 0 4px rgba(255, 77, 109, 0.12);
+    }
+    .t-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .t-card:hover { transform: translateX(6px); border-color: rgba(255, 77, 109, 0.4); }
+    .t-date {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .t-card h4 { font-size: 1.1rem; margin: 0.3rem 0 0.6rem; }
+    .t-card p { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.4rem;
+    }
+    .skill-card {
+      background: linear-gradient(160deg, var(--surface), var(--bg-soft));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.6rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .skill-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .skill-card .icon {
+      width: 46px; height: 46px;
+      display: grid; place-items: center;
+      border-radius: 12px;
+      background: rgba(255, 77, 109, 0.12);
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+    .skill-card h4 { font-size: 1.05rem; margin-bottom: 0.8rem; }
+    .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .chip {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.75rem;
+      border-radius: 100px;
+    }
+
+    /* AI section */
+    #ai {
+      position: relative;
+    }
+    .ai-band {
+      background:
+        radial-gradient(60% 120% at 100% 0%, rgba(77,155,255,0.12), transparent 60%),
+        radial-gradient(60% 120% at 0% 100%, rgba(255,77,109,0.12), transparent 60%),
+        linear-gradient(160deg, var(--surface), var(--bg-soft));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2.6rem 2rem;
+    }
+    .ai-intro {
+      max-width: 46rem;
+      margin: 0 auto 2.4rem;
+      text-align: center;
+      color: var(--text-muted);
+    }
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+    }
+    .ai-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .ai-card::after {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: var(--gradient);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .ai-card:hover { transform: translateY(-6px); border-color: rgba(77,155,255,0.4); }
+    .ai-card:hover::after { transform: scaleX(1); }
+    .ai-card .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      background: rgba(77,155,255,0.1);
+      border: 1px solid rgba(77,155,255,0.25);
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+    }
+    .ai-card h4 { font-size: 1.08rem; margin: 0.9rem 0 0.5rem; }
+    .ai-card p { color: var(--text-muted); font-size: 0.92rem; }
+    .ai-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      justify-content: center;
+      margin-top: 2.2rem;
+    }
+    .ai-highlights .pill {
+      font-size: 0.85rem;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.5rem 1rem;
+      color: var(--text);
+    }
+    .ai-highlights .pill b { color: var(--accent); }
+
+    /* Education */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.4rem;
+    }
+    .edu-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 1.4rem 1.6rem;
+      transition: transform 0.25s ease;
+    }
+    .edu-card:hover { transform: translateY(-5px); }
+    .edu-card h4 { font-size: 1.02rem; margin-bottom: 0.4rem; }
+    .edu-card p { color: var(--text-muted); font-size: 0.9rem; }
+    .edu-card .yr { color: var(--accent-2); font-weight: 600; font-size: 0.85rem; }
+
+    /* Achievements */
+    .ach-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .ach {
+      display: flex;
+      gap: 0.9rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.1rem 1.2rem;
+    }
+    .ach .star { color: var(--accent); font-size: 1.1rem; flex-shrink: 0; }
+    .ach p { font-size: 0.92rem; color: var(--text-muted); }
+
+    /* Contact */
+    .contact-wrap {
+      background: linear-gradient(160deg, var(--surface), var(--bg-soft));
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .contact-wrap p.sub { color: var(--text-muted); max-width: 40ch; margin: 0.6rem auto 2rem; }
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .c-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.3rem;
+      border-radius: 100px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .c-link:hover { transform: translateY(-3px); border-color: var(--accent); }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Reveal on scroll */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* Menu backdrop */
+    .menu-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(2px);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 1050;
+    }
+    .menu-backdrop.open { opacity: 1; visibility: visible; }
+    body.menu-open { overflow: hidden; }
+
+    /* Responsive — tablets & large phones */
+    @media (max-width: 860px) {
+      .hero { padding: 6rem 1.2rem 3rem; }
+      .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+      .hero-eyebrow { margin-inline: auto; }
+      .hero p.lead { margin-inline: auto; }
+      .hero-cta { justify-content: center; }
+      .hero-photo { order: -1; margin-bottom: 0.5rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-photo { max-width: 320px; margin: 0 auto; }
+      section.block { padding: 4rem 1.2rem; }
+      .section-head { margin-bottom: 2rem; }
+      .ai-band { padding: 1.8rem 1.2rem; }
+
+      nav ul {
+        position: fixed;
+        inset: 0 0 0 auto;
+        width: 78%;
+        max-width: 320px;
+        flex-direction: column;
+        align-items: flex-start;
+        background: var(--bg-soft);
+        padding: 5rem 2rem;
+        gap: 1.6rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        border-left: 1px solid var(--border);
+        z-index: 1080;
+      }
+      nav ul.open { transform: translateX(0); }
+      nav ul li a { font-size: 1.05rem; color: var(--text); }
+      .nav-toggle { display: block; z-index: 1100; }
+    }
+
+    /* Responsive — small phones */
+    @media (max-width: 480px) {
+      .hero { padding: 5.5rem 1rem 2.5rem; min-height: auto; }
+      .hero h1 { letter-spacing: -0.5px; }
+      .hero p.lead { font-size: 0.98rem; }
+      .hero-cta { flex-direction: column; align-items: stretch; }
+      .hero-cta .btn { justify-content: center; }
+
+      /* Move floating badges below the photo so they never cover the face */
+      .hero-photo { display: flex; flex-direction: column; align-items: center; }
+      .hero-photo img { width: min(300px, 82vw); }
+      .float-badge {
+        position: static;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.72rem;
+        padding: 0.5rem 0.85rem;
+        animation: none;
+      }
+      .float-badge .num { font-size: 1rem; }
+      .float-badge.b1, .float-badge.b2 { top: auto; left: auto; right: auto; bottom: auto; }
+      .hero-badges {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-top: 1rem;
+      }
+
+      section.block { padding: 3.2rem 1rem; }
+      .about-stats { gap: 0.6rem; }
+      .stat { padding: 0.9rem 0.5rem; }
+      .stat .n { font-size: 1.4rem; }
+      .stat .l { font-size: 0.7rem; }
+
+      .t-item { padding-left: 2.8rem; }
+      .t-card { padding: 1.1rem 1.2rem; }
+      .t-card h4 { font-size: 1rem; }
+
+      .ai-card, .edu-card, .skill-card { padding: 1.2rem; }
+      .contact-wrap { padding: 2.2rem 1.2rem; }
+      .contact-links { gap: 0.6rem; }
+      .c-link { width: 100%; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, .aurora, .float-badge, .hero-eyebrow .dot { animation: none !important; }
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+    }
   </style>
 </head>
 <body>
-  <div class="glow"></div><div class="noise"></div>
-  <header id="header"><nav class="shell"><a class="brand" href="#home"><span class="brand-mark">AK</span><span>Abhay Kumar</span></a><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button><ul class="nav-links"><li><a href="#expertise">Expertise</a></li><li><a href="#work">Selected work</a></li><li><a href="#experience">Experience</a></li><li><a href="#credentials">Credentials</a></li><li><a class="nav-cta" href="#contact">Let’s connect</a></li></ul></nav></header>
+  <div class="aurora"></div>
+  <div class="menu-backdrop" id="menuBackdrop"></div>
+
+  <header id="header">
+    <nav>
+      <div class="logo">Abhay <span>Kumar</span></div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#ai">AI Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-eyebrow"><span class="dot"></span> Senior ADAS Engineer @ Jaguar Land Rover</span>
+        <h1>Building <span class="grad">safer, smarter</span> vehicles &amp; systems.</h1>
+        <p class="role">I'm a <span class="typed" id="typed"></span></p>
+        <p class="lead">10+ years turning complex requirements into safety-critical, real-world products across automotive, rail and healthcare — now fusing functional safety with GenAI-driven engineering tools. Currently pursuing an M.Tech in AI &amp; ML at BITS Pilani.</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Get in touch &rarr;</a>
+          <a href="#experience" class="btn btn-ghost">View experience</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="hero.jpg" alt="Abhay Kumar" onerror="this.onerror=null;this.src='about.jpg';" />
+        <div class="hero-badges">
+          <div class="float-badge b1"><div class="num">10+</div>Years in engineering</div>
+          <div class="float-badge b2"><div class="num">ISO 26262</div>ASIL B/D &amp; ASPICE</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <section class="hero" id="home"><div class="shell hero-grid"><div class="hero-copy"><div class="availability"><span class="pulse"></span>Senior ADAS Engineer · Bengaluru</div><h1>Engineering intelligence <span class="outline">into motion.</span></h1><p class="hero-lead"><strong>I turn complex safety requirements into dependable vehicle software.</strong> A cross-industry systems engineer spanning automotive, healthcare and rail—now building ADAS architectures and AI-powered engineering workflows at Jaguar Land Rover.</p><div class="actions"><a class="button primary" href="#work">Explore my work <span>↘</span></a><a class="button secondary" href="mailto:abhaykumariit2011@gmail.com">Start a conversation</a></div></div><div class="hero-visual"><span class="coord c1">12.9698° N</span><span class="coord c2">77.7500° E</span><div class="orbit"></div><div class="portrait-frame"><img src="hero.jpg" alt="Portrait of Abhay Kumar" onerror="this.onerror=null;this.src='about.jpg'"></div><div class="signal-card"><b>10+</b><span>years engineering<br>critical systems</span></div></div></div></section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>ADAS Architecture</span><span>Functional Safety</span><span>Classic & Adaptive AUTOSAR</span><span>MBSE & SysML</span><span>AI Engineering</span><span>ASPICE</span><span>ADAS Architecture</span><span>Functional Safety</span><span>Classic & Adaptive AUTOSAR</span><span>MBSE & SysML</span><span>AI Engineering</span><span>ASPICE</span></div></div>
-    <section class="section" id="expertise"><div class="shell"><div class="eyebrow reveal">Engineering profile</div><h2 class="section-title reveal">Where systems thinking meets real-world safety.</h2><p class="section-lead reveal">I work across the full engineering chain—from feature intent and architecture to software requirements, integration, verification and release readiness.</p><div class="metrics reveal"><div class="metric"><b>10<em>+</em></b><small>Years across 3 industries</small></div><div class="metric"><b>20</b><small>Engineers supported on FuSa</small></div><div class="metric"><b>100<em>%</em></b><small>MIL coverage target achieved</small></div><div class="metric"><b>5</b><small>AI engineering tools built</small></div></div><div class="expertise-grid"><article class="expertise-card reveal"><span class="num">01 / ARCHITECTURE</span><h3>ADAS systems & software</h3><p>AEB, ACC and APA feature architecture across distributed ECUs and high-performance compute.</p></article><article class="expertise-card reveal"><span class="num">02 / ASSURANCE</span><h3>Safety, quality & traceability</h3><p>ISO 26262 ASIL B, ASPICE SWE.2, end-to-end traceability, verification strategy and audit readiness.</p></article><article class="expertise-card reveal"><span class="num">03 / INTELLIGENCE</span><h3>AI-powered engineering</h3><p>Practical GenAI and Python tools for innovation assessment, requirement authoring and validation.</p></article></div><div class="architecture reveal"><div class="arch-label">Representative end-to-end ADAS communication architecture</div><div class="flow"><div class="node">Vehicle signals</div><div class="node">CAN</div><div class="node">AUTOSAR</div><div class="node">Shared memory / IPC</div><div class="node">SOME/IP</div><div class="node">ADAS backend</div></div><p class="arch-note"><strong>Designed for dependable delivery:</strong> latency-aware paths, middleware abstraction and E2E protection using AUTOSAR Profile 6 / OEM-specific mechanisms.</p></div></div></section>
-    <section class="section" id="work"><div class="shell"><div class="eyebrow reveal">Selected work</div><h2 class="section-title reveal">Building beyond the requirement.</h2><p class="section-lead reveal">A selection of architecture, automation and advanced safety concepts developed around real engineering problems.</p><div class="work-grid"><article class="project wide reveal"><span class="project-tag">Core platform work · Jaguar Land Rover</span><h3>Safety-critical ADAS feature architecture</h3><p>Architected AEB, ACC and APA from functional decomposition through static and dynamic software views, communication interfaces, decision logic and verification.</p><ul class="project-list"><li>Classic AUTOSAR ECU to Adaptive AUTOSAR on POSIX-based QNX</li><li>SET / GET / NOTIFY service semantics over SOME/IP</li><li>MATLAB Simulink state logic and C++14 integration modules</li><li>SYS3 → SWE1/2 → architecture → unit design → verification traceability</li></ul><div class="tech-row"><span>MSOSA / MBSE</span><span>AUTOSAR</span><span>SOME/IP</span><span>QNX</span><span>C++14</span><span>Simulink</span><span>ISO 26262</span></div><div class="radar" aria-hidden="true"><i></i><i></i><i></i><b></b></div></article><article class="project reveal"><span class="project-tag">Applied AI</span><h3>ADAS Innovation Validator</h3><p>Assesses novelty, technical feasibility and integration against vehicle architecture, functional safety and patent landscapes.</p><div class="tech-row"><span>GenAI</span><span>Innovation</span><span>FuSa mapping</span></div></article><article class="project reveal"><span class="project-tag">Engineering automation</span><h3>Requirements intelligence suite</h3><p>AI-assisted requirement authoring, originality checks, white-paper drafting and edge-case scenario generation.</p><div class="tech-row"><span>ASPICE</span><span>Python</span><span>Test coverage</span></div></article></div></div></section>
-    <section class="section" id="experience"><div class="shell"><div class="eyebrow reveal">Career journey</div><h2 class="section-title reveal">One engineering mindset. Three safety-critical industries.</h2><div class="career-layout"><aside class="career-sticky reveal"><p>From metro communication systems to connected medical devices and intelligent vehicles, my career has been built around complexity, interoperability and trust.</p><a class="button secondary" href="#contact">Discuss an opportunity ↗</a></aside><div class="roles"><article class="role-card reveal"><div class="role-meta">July 2024 — Present</div><h3>Senior Engineer</h3><div class="company">Jaguar Land Rover · ADAS Software Development & Requirements</div><p>Lead architecture, requirements, functional-safety compliance, release governance and cross-team delivery for advanced driver-assistance features. Present readiness and KPIs to India–UK leadership and develop advanced safety concepts and AI tooling.</p><ul><li>AEB / ACC / APA</li><li>ISO 26262</li><li>ASPICE</li><li>AUTOSAR</li><li>CI/CD governance</li></ul></article><article class="role-card reveal"><div class="role-meta">August 2022 — July 2024</div><h3>Senior Engineer, Systems Interoperability</h3><div class="company">Baxter International</div><p>Defined architectures and interfaces connecting infusion pumps, EMRs and gateway applications, while supporting cybersecurity, design control, verification and traceability in regulated medical systems.</p><ul><li>Medical devices</li><li>WPA2 / WPA3</li><li>EMR integration</li><li>Design controls</li></ul></article><article class="role-card reveal"><div class="role-meta">March 2022 — August 2022</div><h3>Senior Engineer II</h3><div class="company">Harman International · Digital Cockpit & ADAS</div><p>Owned functional and non-functional specifications, requirements baselines, change control, customer technical topics, risk analysis and reuse strategy.</p><ul><li>Product ownership</li><li>Requirements</li><li>Change control</li><li>Customer management</li></ul></article><article class="role-card reveal"><div class="role-meta">July 2016 — March 2022</div><h3>Lead System & Control Engineering Expert</h3><div class="company">Alstom Transport</div><p>Designed and validated passenger communication systems for major metro programs across India, Singapore and Australia. Led architecture, integration, customer training and project execution from specification to revenue service.</p><ul><li>Global rail programs</li><li>PACIS</li><li>Ethernet / TCP-IP</li><li>SysML</li><li>On-site validation</li></ul></article></div></div></div></section>
-    <section class="section" id="credentials"><div class="shell"><div class="eyebrow reveal">Capabilities</div><h2 class="section-title reveal">Deep technical range, anchored in systems.</h2><div class="skills-layout"><p class="skills-copy reveal">I’m strongest where disciplines intersect: <strong>architecture and implementation, safety and speed, rigor and innovation.</strong></p><div class="skill-groups"><div class="skill-group reveal"><h3>Architecture & requirements</h3><p>MBSE · SysML · MSOSA · DOORS · TRM · JIRA · functional decomposition · interface specifications · V-model · Agile / Scrum</p></div><div class="skill-group reveal"><h3>Automotive software</h3><p>Classic & Adaptive AUTOSAR · SOME/IP · CAN · IPC · QNX · C++14 · MATLAB Simulink · Git · CI/CD</p></div><div class="skill-group reveal"><h3>Safety, quality & networks</h3><p>ISO 26262 · ASPICE · FMEA · 8D · QRQC · RCA · Ethernet · TCP/IP · WPA2/WPA3 · cybersecurity</p></div><div class="skill-group reveal"><h3>AI, automation & leadership</h3><p>GenAI engineering tools · Python automation · product ownership · PI planning · technical training · cross-functional leadership</p></div></div></div><div class="edu-awards"><div><div class="column-title reveal">Education</div><div class="edu-item reveal"><h3>M.Tech, Artificial Intelligence & Machine Learning</h3><p>BITS Pilani · WILP</p><p class="date">2026–2028 · Ongoing</p></div><div class="edu-item reveal"><h3>B.Tech, Electrical Engineering</h3><p>National Institute of Technology Srinagar · CGPA 8.039</p><p class="date">2012–2016</p></div><div class="edu-item reveal"><h3>PG Diploma, Information & Cyber Security</h3><p>IGNOU · CGPA 8.3</p><p class="date">2019–2021</p></div></div><div><div class="column-title reveal">Recognition</div><div class="award-item reveal"><h3>Outstanding Achiever Award</h3><p>Baxter · Novum SYR interoperability testing · Q4 2023</p></div><div class="award-item reveal"><h3>Two-time Spot Trainer Award</h3><p>Alstom · March & December 2021</p></div><div class="award-item reveal"><h3>Six Sigma Green Belt</h3><p>KPMG certification</p></div><div class="award-item reveal"><h3>GATE Electrical Engineering</h3><p>All India Rank 1861 · 2016</p></div></div></div></div></section>
-    <section class="section" id="contact"><div class="shell"><div class="contact-card reveal"><div class="eyebrow">Next connection</div><h2>Let’s engineer what’s <span>next.</span></h2><p class="section-lead">Open to senior engineering, architecture, functional-safety and AI-enabled product opportunities where complex systems need clear thinking.</p><div class="contact-links"><a class="button primary" href="mailto:abhaykumariit2011@gmail.com">Email me ↗</a><a class="button secondary" href="https://www.linkedin.com/in/abhay-kumar-5ab24715b/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button secondary" href="https://abhaykumar4001.wordpress.com/" target="_blank" rel="noopener noreferrer">Writing</a></div><div class="contact-details"><span>Bengaluru, Karnataka, India</span><a href="tel:+918197736143">+91 81977 36143</a><a href="mailto:abhaykumariit2011@gmail.com">abhaykumariit2011@gmail.com</a></div></div></div></section>
+    <!-- ABOUT -->
+    <section class="block reveal" id="about">
+      <div class="section-head">
+        <div class="kicker">About</div>
+        <h2>Engineer, educator &amp; builder</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="about.jpg" alt="Abhay Kumar" />
+        </div>
+        <div class="about-text">
+          <p>Hi, I'm <strong>Abhay Kumar</strong> — an engineer with <strong>10+ years</strong> spanning automotive, rail transport and healthcare. My work is defined by architecting complex systems, leading multifunctional teams and delivering high-quality, safety-critical solutions.</p>
+          <p>I currently work at <strong>Jaguar Land Rover</strong> as a Senior Engineer in ADAS Software Development &amp; Requirements, architecting features like AEB, ACC and APA across Classic &amp; Adaptive AUTOSAR and leading ISO 26262 (ASIL B) compliance for a 20-member team. Earlier I drove system interoperability at <strong>Baxter</strong>, digital cockpit &amp; ADAS at <strong>Harman</strong>, and passenger communication systems at <strong>Alstom</strong>.</p>
+          <p>I'm deeply invested in <strong>AI-driven engineering</strong> — building GenAI tools that are reshaping how ADAS teams innovate, author requirements and validate designs. I hold a B.Tech in Electrical Engineering (NIT Srinagar), a PG Diploma in Cyber Security, and am pursuing an <strong>M.Tech in AI &amp; ML at BITS Pilani</strong>.</p>
+          <div class="about-stats">
+            <div class="stat"><div class="n">10+</div><div class="l">Years experience</div></div>
+            <div class="stat"><div class="n">3</div><div class="l">Industries mastered</div></div>
+            <div class="stat"><div class="n">5</div><div class="l">AI tools built</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="block reveal" id="experience">
+      <div class="section-head">
+        <div class="kicker">Career</div>
+        <h2>Professional experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-card">
+            <div class="t-date">July 2024 &ndash; Present</div>
+            <h4>Senior Engineer &mdash; ADAS Software Development &amp; Requirements &middot; Jaguar Land Rover</h4>
+            <p>Architect ADAS features (AEB, ACC, APA) using MSOSA across Classic &amp; Adaptive AUTOSAR, engineering end-to-end signal flow (CAN &rarr; AUTOSAR &rarr; IPC &rarr; SOME/IP) with E2E protection, and building decision logic in MATLAB Simulink and C++14. Own requirements engineering and ASPICE (SWE.2) traceability in DOORS/TRM/JIRA, and lead ISO 26262 (ASIL B) functional-safety compliance for a 20-member team. Drive Agile/PI planning, MIL/HiL verification, and pioneer GenAI tooling &amp; Python automation for ADAS engineering.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-card">
+            <div class="t-date">Aug 2022 &ndash; Jul 2024</div>
+            <h4>Senior Engineer, Systems Interoperability &middot; Baxter International</h4>
+            <p>Drove wireless connectivity and cybersecurity for medical devices (WPA2/WPA3) and defined system architectures enabling interoperability between infusion pumps, EMRs and gateways. Partnered with design and verification teams on test strategies and ensured full traceability across specifications, design and validation.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-card">
+            <div class="t-date">Mar 2022 &ndash; Aug 2022</div>
+            <h4>Senior Engineer II &middot; Harman International</h4>
+            <p>Owned system engineering for digital cockpit and ADAS products — developing functional and non-functional specifications, analysing risk, managing requirements and change control, and interfacing with customers. Drove reuse of internal requirements and supported business development through technical impact analysis and compliance matrices.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-card">
+            <div class="t-date">Jul 2016 &ndash; Mar 2022</div>
+            <h4>Lead System &amp; Control Engineering Expert &middot; Alstom Transport</h4>
+            <p>Designed and implemented Passenger Announcement &amp; Communication Information Systems (PACIS) for metro projects worldwide (Kochi, Lucknow, Singapore, Sydney, Perth, Mumbai and more). Created technical purchase specifications and proposals with architectures and BOQs, validated systems on site, led subsystem integration and change management, and mentored new engineers.</p>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-card">
+            <div class="t-date">Jan 2014 &ndash; Jan 2015</div>
+            <h4>Certified Physics Expert (Meritnation) &amp; Online Tutor (TutorVista)</h4>
+            <p>Taught physics to high-school students globally on leading online tutoring platforms, resolving complex queries and helping students achieve academic success.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI WORK -->
+    <section class="block reveal" id="ai">
+      <div class="section-head">
+        <div class="kicker">Spotlight</div>
+        <h2>AI-driven engineering</h2>
+      </div>
+      <div class="ai-band">
+        <p class="ai-intro">I build GenAI tools that are changing how ADAS teams innovate, author requirements and validate designs at Jaguar Land Rover — moving AI from buzzword to daily engineering value. My AI Tool Showcase training brought these capabilities to the wider team.</p>
+        <div class="ai-grid">
+          <div class="ai-card">
+            <span class="tag">GenAI &middot; Innovation</span>
+            <h4>ADAS Innovation Validator (AIV)</h4>
+            <p>A GenAI tool that evaluates the novelty, technical feasibility and system integration of ADAS ideas — mapped to JLR architecture, ISO 26262 and global patent landscapes. Recognised by the ADAS VAL Product Owner for fostering a culture of innovation.</p>
+          </div>
+          <div class="ai-card">
+            <span class="tag">GenAI &middot; Authoring</span>
+            <h4>AI Requirement Authoring Assistant</h4>
+            <p>Supports SYS2/SYS3 software requirement creation aligned with ASPICE, NDAS signal mapping and functional-safety standards — accelerating requirements work while improving consistency and compliance.</p>
+          </div>
+          <div class="ai-card">
+            <span class="tag">GenAI &middot; Writing</span>
+            <h4>White Paper Writing Assistant</h4>
+            <p>Auto-generates structured drafts (abstract, problem, innovation, impact) for internal ADAS R&amp;D concepts, cutting the effort to turn raw ideas into shareable technical documents.</p>
+          </div>
+          <div class="ai-card">
+            <span class="tag">AI &middot; Integrity</span>
+            <h4>Plagiarism Detection Tool</h4>
+            <p>A custom AI tool that scores originality of ADAS documentation and research with sentence-level overlap detection and source traceability.</p>
+          </div>
+          <div class="ai-card">
+            <span class="tag">AI &middot; Validation</span>
+            <h4>Automated Edge-Case Generation</h4>
+            <p>Uses AI-based requirement interpretation to auto-generate edge-case test scenarios for ADAS validation — closing coverage gaps that traditional test design misses.</p>
+          </div>
+          <div class="ai-card">
+            <span class="tag">Python &middot; Automation</span>
+            <h4>Signal &amp; Requirements Automation</h4>
+            <p>Python-based tools for signal validation and requirements-quality assessment, improving engineering efficiency and raising review quality across the team.</p>
+          </div>
+        </div>
+        <div class="ai-highlights">
+          <span class="pill"><b>5</b> GenAI tools built &amp; deployed</span>
+          <span class="pill"><b>M.Tech</b> AI &amp; ML @ BITS Pilani</span>
+          <span class="pill"><b>AI Tool Showcase</b> training delivered</span>
+          <span class="pill"><b>ISO 26262</b> + AI compliance mapping</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="block reveal" id="skills">
+      <div class="section-head">
+        <div class="kicker">Toolbox</div>
+        <h2>Skills &amp; expertise</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="icon">&#9881;&#65039;</div>
+          <h4>Systems &amp; Control Engineering</h4>
+          <div class="chips">
+            <span class="chip">MBSE / SysML</span>
+            <span class="chip">MSOSA</span>
+            <span class="chip">Classic &amp; Adaptive AUTOSAR</span>
+            <span class="chip">Control Engineering</span>
+            <span class="chip">Train-level architecture</span>
+            <span class="chip">V-Model &amp; Agile</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="icon">&#128187;</div>
+          <h4>Software &amp; Tools</h4>
+          <div class="chips">
+            <span class="chip">C++14</span>
+            <span class="chip">Python</span>
+            <span class="chip">MATLAB</span>
+            <span class="chip">DOORS / TRM</span>
+            <span class="chip">JIRA</span>
+            <span class="chip">ALM</span>
+            <span class="chip">Teamcenter</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="icon">&#128225;</div>
+          <h4>Connectivity &amp; Safety</h4>
+          <div class="chips">
+            <span class="chip">SOME/IP</span>
+            <span class="chip">CAN</span>
+            <span class="chip">TCP/IP</span>
+            <span class="chip">ISO 26262 (ASIL B/D)</span>
+            <span class="chip">ASPICE</span>
+            <span class="chip">WPA2/WPA3</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="icon">&#129504;</div>
+          <h4>AI &amp; Leadership</h4>
+          <div class="chips">
+            <span class="chip">GenAI tooling</span>
+            <span class="chip">Product ownership</span>
+            <span class="chip">FMEA / 8D / QRQC / RCA</span>
+            <span class="chip">Mentoring</span>
+            <span class="chip">Digital marketing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="block reveal" id="education">
+      <div class="section-head">
+        <div class="kicker">Academics</div>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <h4>M.Tech, Artificial Intelligence &amp; ML</h4>
+          <p>BITS Pilani (WILP)</p>
+          <p class="yr">Ongoing &middot; 2026&ndash;2028</p>
+        </div>
+        <div class="edu-card">
+          <h4>B.Tech, Electrical Engineering</h4>
+          <p>National Institute of Technology, Srinagar</p>
+          <p class="yr">CGPA 8.039 &middot; 2012&ndash;2016</p>
+        </div>
+        <div class="edu-card">
+          <h4>PG Diploma, Information &amp; Cyber Security</h4>
+          <p>Indira Gandhi National Open University</p>
+          <p class="yr">CGPA 8.3 &middot; 2019&ndash;2021</p>
+        </div>
+        <div class="edu-card">
+          <h4>Higher Secondary (AISSCE)</h4>
+          <p>Emmanuel Mission School, Kota</p>
+          <p class="yr">82.8% &middot; 95% Maths &middot; 2011</p>
+        </div>
+        <div class="edu-card">
+          <h4>Secondary (AISSE)</h4>
+          <p>DPS, Panipat Refinery Township</p>
+          <p class="yr">89.4% &middot; 95% Maths &amp; Science &middot; 2009</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="block reveal" id="achievements">
+      <div class="section-head">
+        <div class="kicker">Recognition</div>
+        <h2>Achievements &amp; honors</h2>
+      </div>
+      <div class="ach-grid">
+        <div class="ach"><span class="star">&#9733;</span><p>Built &amp; deployed 5 GenAI tools for ADAS engineering; delivered an AI Tool Showcase training (JLR, 2025)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Outstanding Achiever Award — Novum SYR interoperability testing, Baxter (Q4 2023)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Six Sigma Green Belt Certified (KPMG)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Spot Trainer Awards at Alstom (Dec 2021 &amp; Mar 2021)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Appreciation Award — System Engineering, Kochi Metro (Jul 2017)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Cracked GATE Electrical 2016 (AIR-1861); top ranks in UPTU, IIT-JEE &amp; AIEEE</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>High Spirit YEGP Award (Jul 2016)</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Campus Recruitment Coordinator, Workshop Head &amp; Badminton Captain, NIT Srinagar</p></div>
+        <div class="ach"><span class="star">&#9733;</span><p>Published poems &amp; essays; maintain a personal blog and online art portfolio</p></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="block reveal" id="contact">
+      <div class="contact-wrap">
+        <div class="kicker" style="color:var(--accent);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:0.85rem;">Get in touch</div>
+        <h2 style="font-size:clamp(1.8rem,4vw,2.4rem);margin-top:0.5rem;">Let's build something great</h2>
+        <p class="sub">Open to collaboration, consulting and interesting engineering conversations.</p>
+        <div class="contact-links">
+          <a class="c-link" href="mailto:abhaykumariit2011@gmail.com">&#9993;&#65039; Email</a>
+          <a class="c-link" href="tel:+918197736143">&#128222; +91 81977 36143</a>
+          <a class="c-link" href="https://www.linkedin.com/in/abhay-kumar-5ab24715b/" target="_blank" rel="noopener">&#128188; LinkedIn</a>
+          <a class="c-link" href="https://abhaykumar4001.wordpress.com/" target="_blank" rel="noopener">&#9997;&#65039; Blog</a>
+        </div>
+        <p style="margin-top:1.6rem;color:var(--text-muted);font-size:0.85rem;">&#128205; Bengaluru, Karnataka, India</p>
+      </div>
+    </section>
   </main>
-  <footer><div class="shell footer-inner"><span>© <span id="year"></span> Abhay Kumar · Systems engineered with intent.</span><a class="to-top" href="#home">Back to top ↑</a></div></footer>
+
+  <footer>
+    &copy; <span id="year"></span> Abhay Kumar &middot; Designed &amp; built with care.
+  </footer>
+
   <script>
-    const header=document.getElementById('header'),menu=document.querySelector('.nav-links'),button=document.querySelector('.menu-btn');
-    const closeMenu=()=>{menu.classList.remove('open');document.body.classList.remove('menu-open');button.textContent='☰';button.setAttribute('aria-expanded','false')};
-    button.addEventListener('click',()=>{const open=menu.classList.toggle('open');document.body.classList.toggle('menu-open',open);button.textContent=open?'×':'☰';button.setAttribute('aria-expanded',String(open))});
-    document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeMenu));
-    window.addEventListener('scroll',()=>header.classList.toggle('scrolled',scrollY>20),{passive:true});
-    const reveal=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');reveal.unobserve(e.target)}}),{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>reveal.observe(el));
-    const sections=[...document.querySelectorAll('main section[id]')],links=[...document.querySelectorAll('.nav-links a[href^="#"]')];
-    const spy=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-40% 0px -52%'});sections.forEach(s=>spy.observe(s));
-    document.getElementById('year').textContent=new Date().getFullYear();
+    // Sticky nav shadow
+    const header = document.getElementById('header');
+    const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Mobile menu
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    const backdrop = document.getElementById('menuBackdrop');
+    const openMenu = () => {
+      menu.classList.add('open');
+      backdrop.classList.add('open');
+      document.body.classList.add('menu-open');
+      toggle.innerHTML = '&#10005;'; // X
+      toggle.setAttribute('aria-expanded', 'true');
+    };
+    const closeMenu = () => {
+      menu.classList.remove('open');
+      backdrop.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      toggle.innerHTML = '&#9776;'; // hamburger
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    toggle.addEventListener('click', () => menu.classList.contains('open') ? closeMenu() : openMenu());
+    backdrop.addEventListener('click', closeMenu);
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    window.addEventListener('resize', () => { if (window.innerWidth > 860) closeMenu(); });
+
+    // Typed roles
+    const roles = [
+      'Senior ADAS Software Engineer.',
+      'Functional Safety specialist.',
+      'Requirements &amp; MBSE expert.',
+      'AI-driven engineering builder.',
+      'Educator &amp; mentor.'
+    ];
+    const typedEl = document.getElementById('typed');
+    let ri = 0, ci = 0, deleting = false;
+    function tick() {
+      const full = roles[ri].replace(/&amp;/g, '&');
+      typedEl.textContent = full.slice(0, ci);
+      if (!deleting && ci < full.length) { ci++; }
+      else if (!deleting && ci === full.length) { deleting = true; setTimeout(tick, 1400); return; }
+      else if (deleting && ci > 0) { ci--; }
+      else { deleting = false; ri = (ri + 1) % roles.length; }
+      setTimeout(tick, deleting ? 40 : 75);
+    }
+    tick();
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
